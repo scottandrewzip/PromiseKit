@@ -3,6 +3,9 @@
 import PackageDescription
 
 let pkg = Package(name: "PromiseKit")
+pkg.platforms = [
+   .iOS(.v11), .tvOS(.v11)
+]
 pkg.products = [
     .library(name: "PromiseKit", targets: ["PromiseKit"]),
 ]
